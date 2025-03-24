@@ -1,5 +1,3 @@
-# Ravinder Chadha
-
 ## 👨‍💻 Software Developer | Data Engineer
 
 Hello! I'm a Software Developer currently working as a Data Engineer at RapidFort USA. I'm passionate about building scalable solutions and have experience in full-stack development, data engineering, and mobile app development.
