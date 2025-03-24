@@ -1,16 +1,27 @@
+# Theme Settings
 title: Ravinder Chadha
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
 logo: assets/images/self.png
+
+# Site Settings
+locale: "en-US"
 description: >
   Software Developer with expertise in Python, JavaScript, and Flutter. 
   Currently working as a Data Engineer at RapidFort USA.
   Passionate about building scalable solutions and contributing to open-source projects.
-
-# Site Settings
-locale: "en-US"
 search: true
 repository: "ravinder-chadha/ravinder-chadha.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Social Sharing
 social:
@@ -22,7 +33,7 @@ social:
 # Site Author
 author:
   name: "Ravinder Chadha"
-  avatar: "/assets/images/logo.png"
+  avatar: "/assets/images/self.png"
   bio: "Software Developer | Data Engineer"
   location: "India"
   links:
@@ -59,3 +70,16 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
