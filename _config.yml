@@ -1,13 +1,61 @@
 title: Ravinder Chadha
-logo: assets/images/logo.png
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "dark"
+logo: assets/images/self.png
 description: >
   Software Developer with expertise in Python, JavaScript, and Flutter. 
   Currently working as a Data Engineer at RapidFort USA.
   Passionate about building scalable solutions and contributing to open-source projects.
-show_downloads: true
-theme: jekyll-theme-minimal
-google_analytics: # Add your Google Analytics ID here if you have one
+
+# Site Settings
+locale: "en-US"
+search: true
+repository: "ravinder-chadha/ravinder-chadha.github.io"
+
+# Social Sharing
 social:
-  linkedin: ravinder-chadha
-  github: ravinder-chadha
-  email: ravinderchadha1233@gmail.com
+  type: Person
+  links:
+    - "https://linkedin.com/in/ravinder-chadha"
+    - "https://github.com/ravinder-chadha"
+
+# Site Author
+author:
+  name: "Ravinder Chadha"
+  avatar: "/assets/images/logo.png"
+  bio: "Software Developer | Data Engineer"
+  location: "India"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:ravinderchadha1233@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/ravinder-chadha"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ravinder-chadha"
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
